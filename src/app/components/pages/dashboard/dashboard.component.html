@@ -1,0 +1,220 @@
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-12">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div
+                                    class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon purple mb-2">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Profile Views</h6>
+                                    <h6 class="font-extrabold mb-0">112.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div
+                                    class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon blue mb-2">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Followers</h6>
+                                    <h6 class="font-extrabold mb-0">183.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div
+                                    class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon green mb-2">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Following</h6>
+                                    <h6 class="font-extrabold mb-0">80.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div
+                                    class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon red mb-2">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Saved Post</h6>
+                                    <h6 class="font-extrabold mb-0">112</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Request By Technician</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped" style="font-size: 12px; margin: 0;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>OPEN</th>
+                                        <th>ONHOLD</th>
+                                        <th>OVERDUE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jon Doe</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Open Request</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart">
+                                <apx-chart
+                                  [series]="chartOptions.series!"
+                                  [chart]="chartOptions.chart!"
+                                  [plotOptions]="chartOptions.plotOptions!"
+                                  [labels]="chartOptions.labels!"
+                                ></apx-chart>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Unassigned And Open</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart4">
+                                <apx-chart
+                                    [series]="chartOptions4.series!"
+                                    [chart]="chartOptions4.chart!"
+                                    [plotOptions]="chartOptions4.plotOptions!"
+                                    [labels]="chartOptions4.labels!"
+                                    [fill]="chartOptions4.fill!"
+                                    [stroke]="chartOptions4.stroke!"
+                                ></apx-chart>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Open Request</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart3">
+                                <apx-chart
+                                    [series]="chartOptions3.series!"
+                                    [chart]="chartOptions3.chart!"
+                                    [dataLabels]="chartOptions3.dataLabels!"
+                                    [plotOptions]="chartOptions3.plotOptions!"
+                                    [yaxis]="chartOptions3.yaxis!"
+                                    [xaxis]="chartOptions3.xaxis!"
+                                    [stroke]="chartOptions3.stroke!"
+                                    [grid]="chartOptions3.grid!"
+                                    [fill]="chartOptions3.fill!"
+                                    [annotations]="chartOptions3.annotations!"
+                              ></apx-chart>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Unassigned And Open</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart2">
+                                <apx-chart
+                                    [series]="chartOptions2.series!"
+                                    [chart]="chartOptions2.chart!"
+                                    [xaxis]="chartOptions2.xaxis!"
+                                    [dataLabels]="chartOptions2.dataLabels!"
+                                    [grid]="chartOptions2.grid!"
+                                    [stroke]="chartOptions2.stroke!"
+                                    [title]="chartOptions2.title!"
+                                ></apx-chart>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

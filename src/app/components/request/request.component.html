@@ -1,0 +1,125 @@
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <div class="btn-group dropdown me-1 mb-3 grpdrp" style="float: right;">
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" id="dropdownMenuOffset"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    data-offset="5,20">
+                    Last 30 days
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <a href="#" class="dropdown-item">Last 30 days</a>
+                    <a href="#"class="dropdown-item">Last 24 hours</a>
+                    <a href="#" class="dropdown-item">This Week</a>
+                    <a href="#" class="dropdown-item">Last 90 days</a>
+                    <a href="#" class="dropdown-item">This month</a>
+                    <a href="#" class="dropdown-item">All data</a>
+                </div>
+            </div>
+
+            <div class="btn-group dropdown me-1 mb-3 grpdrp">
+                <span class="fa-fw select-all fas"></span>
+                <button type="button" class="btn btn-outline-default dropdown-toggle" id="dropdownMenuOffset"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    data-offset="5,20">
+                    Developer's Group
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <form class="px-2 py-2">
+                        <div class="form-group">
+                            <input type="search" class="form-control searchClass" placeholder="Search">
+                        </div>
+                    </form>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="btn-group dropdown me-1 mb-1">
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" id="dropdownMenuOffset"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            data-offset="5,20">
+                            New Incident
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <form class="px-2 py-2">
+                                <div class="form-group">
+                                    <input type="search" class="form-control searchClass" placeholder="Search">
+                                </div>
+                            </form>
+                            <a class="dropdown-item" href="#">onboarding/offboarding</a>
+                            <a class="dropdown-item" href="#">Hardware</a>
+                            <a class="dropdown-item" href="#">Employee</a>
+                            <a class="dropdown-item" href="#">Application access request</a>
+                            <a class="dropdown-item" href="#">Email, Calender, and Microsoft 365</a>
+                            <a class="dropdown-item" href="#">Internet Access</a>
+                            <a class="dropdown-item" href="#">VOIP or Telephone</a>
+                            <a class="dropdown-item" href="#">Credit Memes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="buttons">
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Pick Up</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Close</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Merege</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Link Request</a>
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" id="dropdownMenuOffset"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                data-offset="5,20">
+                                Assign
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <form class="px-2 py-2">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control searchClass" placeholder="Search">
+                                    </div>
+                                </form>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive mb-3">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th *ngFor="let header of requestTableHeader">{{ header }} </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <div class="custom-control custom-checkbox">
+                                        <input 
+                                            type="checkbox" 
+                                            class="form-check-input form-check-secondary" 
+                                            name="customCheck">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="fa-fw select-all fas"></span>
+                            </td>
+                            <td *ngFor="let row of tableData" class="text-bold-500"> {{ row }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <app-pagination></app-pagination>
+        </div>
+    </div>
+
+</section>

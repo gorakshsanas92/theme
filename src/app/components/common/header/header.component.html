@@ -1,0 +1,21 @@
+<header class="mb-3">
+    <a href="#" class="burger-btn d-block d-xl-none">
+        <i class="bi bi-justify fs-3"></i>
+    </a>
+</header>
+<div class="page-title">
+    <div class="row">
+        <div class="col-12 col-md-6 order-md-1 order-last mb-3">
+            <h3>{{ pageTitle }}</h3>
+            <!-- <p class="text-subtitle text-muted">A sortable, searchable, paginated table without dependencies thanks to simple-datatables.</p> -->
+        </div>
+        <div class="col-12 col-md-6 order-md-2 order-first">
+            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" *ngIf="pageTitle != 'Dashboard'"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ pageTitle }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
